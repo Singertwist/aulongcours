@@ -5,8 +5,9 @@
         <link rel="stylesheet" media="screen" type="text/css" title="Design" href="index.css" />
         <script type="text/javascript">var _siteRoot='index.html',_root='index.html';</script>
 		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
 		<?php include('favicon.php'); ?>
-	   <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
+	   
         <title>Au long cours</title>
     </head>
 
