@@ -6,7 +6,7 @@
 				<dt><a href="">Catégories</a></dt>
 			</dl>
 			<dl>	
-				<dt><a href="">Portfolio</a></dt>
+				<dt><a href="/blog/portfolio/portfolio.php">Portfolio</a></dt>
 			</dl>
 			<dl>	
 				<dt><a href="">A propos</a></dt>
