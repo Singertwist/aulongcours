@@ -1,0 +1,308 @@
+@import url("style.css");
+@font-face 
+{
+font-family: "Au long cours";
+src: url('fonte/JandaElegantHandwriting.ttf');
+}
+html
+{
+background-image: url('images/bg.png');
+}
+
+body html
+{
+width: 980px;
+height: 100%;
+margin: 0;
+font-family: "Au long cours";
+position: relative;
+
+}
+
+body
+{
+min-height: 100%;
+width: 980px;
+padding: 0 10px;
+margin: 0 auto;
+font-family: "Au long cours";
+}
+
+/*Début menu*/
+
+.menu
+{
+background-color: #000;
+height: 45px;
+-moz-opacity:0.2;
+opacity: 0.2;
+filter:alpha(opacity=20);
+}
+
+.menu dl
+{
+height: 45px;
+margin: 0;
+padding: 0;
+display: block;
+float: left;
+}
+
+.menu dt
+{
+display: block;
+height: 45px;
+padding-right: 40px;
+padding-left: 40px;
+line-height: 45px;
+text-align: center;
+border-right: solid 1px #ffffff ; /*C98C51 =>Marron clair*/
+cursor: pointer;
+}
+
+.menu dt:hover
+{
+background-color: #464444;/*#4A4A4A;*/
+height: 45px;
+/*-moz-opacity:0.4;
+opacity: 0.4;
+filter:alpha(opacity=40);*/
+}
+.menu dt a
+{
+color: #ffffff;
+text-decoration: none;
+font-size: 13px;
+}
+
+.barre_menu
+{
+background-color: #3C3C3C;
+color: white;
+height: 5px;
+width: 980px;
+}
+/*Fin menu*/
+
+
+.clair
+{
+background-image: url:("images/slider-bg.png");
+width: 980px;
+height: 300px;
+}
+
+.slider
+{
+font-family : Tahoma, sans-serif;
+}
+
+/*logo*/
+.logo img
+{
+margin-top: 50px;
+margin-bottom: 20px;
+margin-left: 20px;
+}
+
+.logo h2 
+{
+margin: 0;
+margin-left: 130px;
+margin-top: -75px;
+margin-bottom: 50px;
+color: #151412;
+}
+
+.logo a
+{
+color: #151412;
+}
+
+.logo a:hover
+{
+color: #1F1F1F;
+}
+.logo h5
+{
+margin: 0;
+margin-left: 130px;
+margin-top: -70px;
+margin-bottom: 50px;
+color: #C65145;
+}
+/*fin logo*/
+
+.en_tete_une
+{
+margin: 0;
+padding: 0;
+background-image: url("images/slider-bg.png");
+width: 980px;
+}
+
+.en_tete_une h4
+{
+margin: 0;
+padding: 15px;
+color: #151412;
+}
+
+/*Corps page*/
+
+/*.colonne_gauche
+{
+float: left;
+width: 640px;
+height: auto;
+background-color: #fff;
+}
+
+.colonne_gauche h3
+{
+margin-left: 10px;
+color: #2A2A2A;
+}
+
+.colonne_gauche h5
+{
+padding-left: 10px;
+padding-right: 10px;
+}
+
+
+.colonne_droite
+{
+float: right;
+width: 340px;
+height: auto;
+background-color: #EEEEEE;
+}*/
+
+.image_colonne
+{
+width: 980px;
+background: url(images/corps.png) center repeat-y;
+}
+.colonne_gauche
+{
+float: left;
+width: 640px;
+background-color: #fff;
+}
+
+.colonne_gauche h3
+{
+margin-left: 10px;
+}
+
+.colonne_gauche h5
+{
+margin-left: 10px;
+}
+
+.colonne_gauche p
+{
+text-align: justify;
+padding-left: 10px;
+padding-right: 10px;
+font-size: 13px;
+}
+
+.colonne_gauche img
+{
+float: right;
+padding: 10px;
+}
+.colonne_droite
+{
+float: right;
+width: 340px;
+background-color: #EEEEEE;
+}
+
+.colonne_droite h3
+{
+margin-left: 10px;
+}
+
+.colonne_droite dl
+{
+margin-left: 10px;
+}
+
+.colonne_droite a
+{
+color: #000;
+}
+
+.colonne_droite a:hover
+{
+color: #1F1F1F;
+}
+/*Fin corps page*/
+
+.center
+{
+padding-bottom: 0px; 
+overflow: auto;
+}
+
+/*pieds de page*/
+.footer
+{
+background-color: #000;
+width: 980px;
+height: 80px;
+margin-bottom: 150px;
+color: #fff;
+position: absolute;
+-moz-opacity:0.2;
+opacity: 0.2;
+filter:alpha(opacity=20);
+}
+
+.footer h4
+{
+margin: 0;
+padding: 0;
+padding-top:5px;
+padding-bottom: 0px;
+text-align:center;
+}
+
+.footer p
+{
+font-size: 10px;
+margin: 0;
+padding: 0;
+margin-left: 920px;
+margin-bottom: 50px;
+}
+
+.footer a
+{
+text-decoration: none;
+color: #fff;
+}
+
+/*Fin pieds de page*/
+
+
+
+/*Numéro page*/
+.num_page
+{
+text-align: center;
+}
+
+.num_page a
+{
+color: #000;
+}
+
+.num_page a:hover
+{
+color: #1F1F1F;
+}
+/*Fin numéro page*/
