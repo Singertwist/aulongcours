@@ -1,17 +1,25 @@
-<?php
-session_start()
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
 
         <meta charset="utf-8" />
-        <title>Titre</title>
+        <link rel="stylesheet" media="screen" type="text/css" title="Design" href="index.css" />
+        <title>Au long cours</title>
+        <?php include('favicon.php'); ?>
     </head>
 
     <body>
+    <?php include('logo.php'); ?>
+    <?php include('menu.php'); ?>
     <?php $afficher = $_GET['afficher_news']; ?>
+    
+    	<div class="image_colonne">
+	<div class="center">
+	<div class="barre_menu"></div>
+	<div class="liste_articles">
+		
+	
+	<div class="colonne_gauche">
     <?php
 try
 {
@@ -27,7 +35,7 @@ try
     while ($donnees = $reponse->fetch())
     {
     ?>
-        <p><?php echo $donnees['titre']; ?><?php echo $donnees['contenu']; ?></p><br/> <img src="<?php echo $donnees['images']; ?>"/>
+        <p><?php echo $donnees['titre']; ?><img src="<?php echo $donnees['images']; ?>"/><?php echo $donnees['contenu']; ?></p>
   
     <?php
     }
@@ -44,3 +52,32 @@ catch(Exception $e)
 
 ?>
 
+	</div>
+	<div class="colonne_droite">
+	<h3>Catégories:</h3>
+				<dl>
+				<dt><a href="">Moncton, qu'est ce donc?</a></dt>
+				</dl>
+				<dl>
+				<dt><a href="">Université de Moncton</a></dt>
+				</dl>
+				<dl>	
+				<dt><a href="">Préparatifs</a></dt>
+				</dl>
+				<dl>	
+				<dt><a href="">Sur place</a></dt>
+				</dl>	
+				<dl>
+				<dt><a href="">A l'aventure!</a></dt>
+				</dl>
+	</div>
+	
+	
+	
+	</div>
+	</div>
+	</div>
+	<?php include('footer.php'); ?>
+
+</body>
+</html

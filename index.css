@@ -1,4 +1,5 @@
 @import url("style.css");
+@import url("footer.css");
 @font-face 
 {
 font-family: "Au long cours";
@@ -16,7 +17,6 @@ height: 100%;
 margin: 0;
 font-family: "Au long cours";
 position: relative;
-
 }
 
 body
@@ -209,10 +209,21 @@ padding-right: 10px;
 font-size: 13px;
 }
 
+.colonne_gauche a
+{
+color: red;
+}
+
+.colonne_gauche a:hover
+{
+color: #1F1F1F;
+}
+
 .colonne_gauche img
 {
 float: right;
 padding: 10px;
+padding-bottom: 0;
 }
 .colonne_droite
 {
@@ -249,42 +260,6 @@ overflow: auto;
 }
 
 /*pieds de page*/
-.footer
-{
-background-color: #000;
-width: 980px;
-height: 80px;
-margin-bottom: 150px;
-color: #fff;
-position: absolute;
--moz-opacity:0.2;
-opacity: 0.2;
-filter:alpha(opacity=20);
-}
-
-.footer h4
-{
-margin: 0;
-padding: 0;
-padding-top:5px;
-padding-bottom: 0px;
-text-align:center;
-}
-
-.footer p
-{
-font-size: 10px;
-margin: 0;
-padding: 0;
-margin-left: 920px;
-margin-bottom: 50px;
-}
-
-.footer a
-{
-text-decoration: none;
-color: #fff;
-}
 
 /*Fin pieds de page*/
 

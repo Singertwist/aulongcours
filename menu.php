@@ -1,6 +1,6 @@
 		<div class="menu">
 			<dl>
-				<dt><a href="/blog/site/index.php">Accueil</a></dt>
+				<dt><a href="/blog/index.php">Accueil</a></dt>
 			</dl>
 			<dl>
 				<dt><a href="">Catégories</a></dt>

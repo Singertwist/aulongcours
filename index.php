@@ -5,8 +5,7 @@
         <link rel="stylesheet" media="screen" type="text/css" title="Design" href="index.css" />
         <script type="text/javascript">var _siteRoot='index.html',_root='index.html';</script>
 		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/scripts.js"></script>
-		<link rel="icon" type="image/png" href="favicon.png" />
+		<?php include('favicon.php'); ?>
 	   <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
         <title>Au long cours</title>
     </head>
@@ -92,7 +91,7 @@ try
         <?php 
 		$position_point = strpos(strip_tags($donnees['contenu']), ".", 1000);
 		$contenunews_raccourci = substr(strip_tags($donnees['contenu']), 0, $position_point+1);
-		echo stripslashes($contenunews_raccourci); ?><?php echo '<a href="afficher.php?afficher_news=' . $donnees['id'] . '">'; ?> Lire la suite</a></p>
+		echo stripslashes($contenunews_raccourci); ?><?php echo '<a href="afficher.php?afficher_news=' . $donnees['id'] . '">'; ?>														Lire la suite...</a></p>
         
          
     <?php
@@ -165,9 +164,7 @@ catch(Exception $e)
 	</div>
 	</div>
 	</div>
-	<div class="footer"> <h4>Au long cours - Tous droits réservés <br/>2012</h4>
-	<p><a href="admin.php">Connexion</a></p>
-	</div>
+	<?php include('footer.php'); ?>
 	
     </body>
 </html>
