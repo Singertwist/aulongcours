@@ -6,17 +6,19 @@ div.content {
 }
 div.content a, div.navigation a {
 	text-decoration: none;
-	color: #777;
+	color: #000;
 }
 div.content a:focus, div.content a:hover, div.content a:active {
-	text-decoration: underline;
+	text-decoration: none;
+	color: #777;
 }
 div.controls {
-	margin-top: 5px;
+	margin-top: 100px;
 	height: 23px;
 }
 div.controls a {
 	padding: 5px;
+	
 }
 div.ss-controls {
 	float: left;
@@ -87,7 +89,7 @@ div.image-title {
 div.image-desc {
 	line-height: 1.3em;
 	padding-top: 12px;
-}
+	}
 div.navigation {
 	/* The navigation style is set using jQuery so that the javascript specific styles won't be applied unless javascript is enabled. */
 }

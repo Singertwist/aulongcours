@@ -1,15 +1,155 @@
-html, body {
-	margin:0;
-	padding:0;
+@import url("style.css");
+@import url("/blog/footer.css");
+@font-face 
+{
+font-family: "Au long cours";
+src: url('/blog/fonte/JandaElegantHandwriting.ttf');
 }
-body{
-	text-align: center;
-	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
-	background-color: #eee;
-	color: #444;
-	font-size: 75%;
+
+html
+{
+background-image: url('/blog/images/bg.png');
 }
-a{
+
+body html
+{
+width: 980px;
+height: 100%;
+margin: 0;
+font-family: "Au long cours";
+position: relative;
+}
+
+body
+{
+min-height: 100%;
+width: 980px;
+padding: 0 10px;
+margin: 0 auto;
+font-family: "Au long cours";
+}
+/*Début menu*/
+.menu
+{
+background-color: #000;
+height: 45px;
+-moz-opacity:0.2;
+opacity: 0.2;
+filter:alpha(opacity=20);
+}
+
+.menu dl
+{
+height: 45px;
+margin: 0;
+padding: 0;
+display: block;
+float: left;
+}
+
+.menu dt
+{
+display: block;
+height: 45px;
+padding-right: 40px;
+padding-left: 40px;
+line-height: 45px;
+text-align: center;
+border-right: solid 1px #ffffff ; /*C98C51 =>Marron clair*/
+cursor: pointer;
+}
+
+.menu dt:hover
+{
+background-color: #464444;/*#4A4A4A;*/
+height: 45px;
+/*-moz-opacity:0.4;
+opacity: 0.4;
+filter:alpha(opacity=40);*/
+}
+.menu dt a
+{
+color: #ffffff;
+text-decoration: none;
+font-size: 13px;
+}
+
+.barre_menu
+{
+background-color: #3C3C3C;
+color: white;
+height: 5px;
+width: 980px;
+}
+
+/*Fin menu*/
+
+/*logo*/
+.logo img
+{
+margin-top: 50px;
+margin-bottom: 20px;
+margin-left: 20px;
+}
+
+.logo h2 
+{
+margin: 0;
+margin-left: 130px;
+margin-top: -75px;
+margin-bottom: 50px;
+color: #151412;
+}
+
+.logo a
+{
+color: #151412;
+text-decoration: none;
+font-family: "Au long cours";
+}
+
+.logo a:hover
+{
+font-family: "Au long cours";
+color: #1F1F1F;
+text-decoration: none;
+}
+.logo h5
+{
+margin: 0;
+margin-left: 130px;
+margin-top: -70px;
+margin-bottom: 50px;
+color: #C65145;
+}
+/*fin logo*/
+
+/*Début une Portfolio*/
+.en_tete_une
+{
+margin: 0;
+padding: 0;
+background-image: url("/blog/images/slider-bg.png");
+width: 980px;
+}
+
+.en_tete_une h4
+{
+margin: 0;
+padding: 15px;
+color: #151412;
+}
+
+.image_colonne
+{
+width: 980px;
+/*background: url('images/corps.png') center repeat-y;*/
+background-color: #fff;
+}
+/*Fin une portfolio*/
+
+
+/*a{
 	color: #27D;
 	text-decoration: none;
 }
@@ -38,19 +178,21 @@ pre {
 	line-height: 1.2em;
 	overflow-x: auto;
 }
-div#page {
-	width: 900px;
+/*div#page {
+	width: 980px;
 	background-color: #fff;
 	margin: 0 auto;
 	text-align: left;
 	border-color: #ddd;
 	border-style: none solid solid;
 	border-width: medium 1px 1px;
-}
-div#container {
+}*/
+
+/*div#container {
 	padding: 20px;
-}
-div#ads {
+}*/
+
+/*div#ads {
 	clear: both;
 	padding: 12px 0 12px 66px;
 }
@@ -60,4 +202,4 @@ div#footer {
 	margin: 0 auto;
 	padding: 20px 0 40px;
 	text-align: center;
-}
+}*/

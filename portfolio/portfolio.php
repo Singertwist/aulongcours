@@ -4,6 +4,7 @@
 		<title>Galleriffic | Integration with history plugin</title>
 		<link rel="stylesheet" href="css/basic.css" type="text/css" />
 		<link rel="stylesheet" href="css/galleriffic-3.css" type="text/css" />
+		<?php include('../favicon.php'); ?>
 		<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
 		<script type="text/javascript" src="js/jquery.history.js"></script>
 		<script type="text/javascript" src="js/jquery.galleriffic.js"></script>
@@ -12,13 +13,16 @@
 		<script type="text/javascript">
 			document.write('<style>.noscript { display: none; }</style>');
 		</script>
+		
 	</head>
+	
 	<body>
 		<div id="page">
 			<div id="container">
-				<h1><a href="index.html">Galleriffic</a></h1>
-				<h2>Integration with history plugin</h2>
-
+				<?php include('../logo.php'); ?>
+				<?php include('../menu.php'); ?>
+				<div class="en_tete_une"><h4>Portfolio:</h4></div>
+				<div class="image_colonne">
 				<!-- Start Advanced Gallery Html Containers -->
 				<div id="gallery" class="content">
 					<div id="controls" class="controls"></div>
@@ -36,10 +40,10 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm4.static.flickr.com/3261/2538183196_8baf9a8015_b.jpg">Download Original</a>
+									<a href="http://farm4.static.flickr.com/3261/2538183196_8baf9a8015_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #0</div>
-								<div class="image-desc">Description</div>
+								
 							</div>
 						</li>
 
@@ -58,7 +62,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm3.static.flickr.com/2093/2538168854_f75e408156_b.jpg">Download Original</a>
+									<a href="http://farm3.static.flickr.com/2093/2538168854_f75e408156_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #2</div>
 								<div class="image-desc">Description</div>
@@ -71,7 +75,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm4.static.flickr.com/3153/2538167690_c812461b7b_b.jpg">Download Original</a>
+									<a href="http://farm4.static.flickr.com/3153/2538167690_c812461b7b_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #3</div>
 								<div class="image-desc">Description</div>
@@ -84,7 +88,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm4.static.flickr.com/3150/2538167224_0a6075dd18_b.jpg">Download Original</a>
+									<a href="http://farm4.static.flickr.com/3150/2538167224_0a6075dd18_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #4</div>
 								<div class="image-desc">Description</div>
@@ -97,7 +101,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm4.static.flickr.com/3204/2537348699_bfd38bd9fd_b.jpg">Download Original</a>
+									<a href="http://farm4.static.flickr.com/3204/2537348699_bfd38bd9fd_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #5</div>
 								<div class="image-desc">Description</div>
@@ -110,7 +114,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm4.static.flickr.com/3124/2538164582_b9d18f9d1b_b.jpg">Download Original</a>
+									<a href="http://farm4.static.flickr.com/3124/2538164582_b9d18f9d1b_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #6</div>
 								<div class="image-desc">Description</div>
@@ -123,7 +127,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm4.static.flickr.com/3205/2538164270_c7d1646ecf_o.jpg">Download Original</a>
+									<a href="http://farm4.static.flickr.com/3205/2538164270_c7d1646ecf_o.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #7</div>
 								<div class="image-desc">Description</div>
@@ -136,7 +140,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm4.static.flickr.com/3211/2538163540_c2026243d2_b.jpg">Download Original</a>
+									<a href="http://farm4.static.flickr.com/3211/2538163540_c2026243d2_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #8</div>
 								<div class="image-desc">Description</div>
@@ -149,7 +153,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm3.static.flickr.com/2315/2537343449_f933be8036_b.jpg">Download Original</a>
+									<a href="http://farm3.static.flickr.com/2315/2537343449_f933be8036_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #9</div>
 								<div class="image-desc">Description</div>
@@ -162,7 +166,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm3.static.flickr.com/2167/2082738157_436d1eb280_b.jpg">Download Original</a>
+									<a href="http://farm3.static.flickr.com/2167/2082738157_436d1eb280_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #10</div>
 								<div class="image-desc">Description</div>
@@ -175,7 +179,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm3.static.flickr.com/2342/2083508720_fa906f685e_b.jpg">Download Original</a>
+									<a href="http://farm3.static.flickr.com/2342/2083508720_fa906f685e_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #11</div>
 								<div class="image-desc">Description</div>
@@ -188,7 +192,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm3.static.flickr.com/2132/2082721339_4b06f6abba_b.jpg">Download Original</a>
+									<a href="http://farm3.static.flickr.com/2132/2082721339_4b06f6abba_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #12</div>
 								<div class="image-desc">Description</div>
@@ -201,7 +205,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm3.static.flickr.com/2139/2083503622_5b17f16a60_b.jpg">Download Original</a>
+									<a href="http://farm3.static.flickr.com/2139/2083503622_5b17f16a60_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #13</div>
 								<div class="image-desc">Description</div>
@@ -214,7 +218,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm3.static.flickr.com/2041/2083498578_114e117aab_b.jpg">Download Original</a>
+									<a href="http://farm3.static.flickr.com/2041/2083498578_114e117aab_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #14</div>
 								<div class="image-desc">Description</div>
@@ -227,7 +231,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm3.static.flickr.com/2149/2082705341_afcdda0663_b.jpg">Download Original</a>
+									<a href="http://farm3.static.flickr.com/2149/2082705341_afcdda0663_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #15</div>
 								<div class="image-desc">Description</div>
@@ -240,7 +244,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm3.static.flickr.com/2014/2083478274_26775114dc_b.jpg">Download Original</a>
+									<a href="http://farm3.static.flickr.com/2014/2083478274_26775114dc_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #16</div>
 								<div class="image-desc">Description</div>
@@ -253,7 +257,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm3.static.flickr.com/2194/2083464534_122e849241_b.jpg">Download Original</a>
+									<a href="http://farm3.static.flickr.com/2194/2083464534_122e849241_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #17</div>
 								<div class="image-desc">Description</div>
@@ -266,7 +270,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm4.static.flickr.com/3127/2538173236_b704e7622e_b.jpg">Download Original</a>
+									<a href="http://farm4.static.flickr.com/3127/2538173236_b704e7622e_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #18</div>
 								<div class="image-desc">Description</div>
@@ -279,7 +283,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm3.static.flickr.com/2375/2538172432_3343a47341_b.jpg">Download Original</a>
+									<a href="http://farm3.static.flickr.com/2375/2538172432_3343a47341_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #19</div>
 								<div class="image-desc">Description</div>
@@ -292,7 +296,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm3.static.flickr.com/2353/2083476642_d00372b96f_b.jpg">Download Original</a>
+									<a href="http://farm3.static.flickr.com/2353/2083476642_d00372b96f_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #20</div>
 								<div class="image-desc">Description</div>
@@ -305,7 +309,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm3.static.flickr.com/2201/1502907190_7b4a2a0e34_b.jpg">Download Original</a>
+									<a href="http://farm3.static.flickr.com/2201/1502907190_7b4a2a0e34_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #21</div>
 								<div class="image-desc">Description</div>
@@ -318,7 +322,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm2.static.flickr.com/1116/1380178473_fc640e097a_b.jpg">Download Original</a>
+									<a href="http://farm2.static.flickr.com/1116/1380178473_fc640e097a_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #22</div>
 								<div class="image-desc">Description</div>
@@ -331,7 +335,7 @@
 							</a>
 							<div class="caption">
 								<div class="download">
-									<a href="http://farm2.static.flickr.com/1260/930424599_e75865c0d6_b.jpg">Download Original</a>
+									<a href="http://farm2.static.flickr.com/1260/930424599_e75865c0d6_b.jpg">Télécharger l'original</a>
 								</div>
 								<div class="image-title">Title #23</div>
 								<div class="image-desc">Description</div>
@@ -339,11 +343,12 @@
 						</li>
 					</ul>
 				</div>
+				
 				<!-- End Advanced Gallery Html Containers -->
 				<div style="clear: both;"></div>
 			</div>
 		</div>
-		<div id="footer">&copy; 2009 Trent Foley</div>
+		<?php include('../footer.php'); ?>
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				// We only want these styles applied when javascript is enabled
@@ -363,7 +368,7 @@
 				// Initialize Advanced Galleriffic Gallery
 				var gallery = $('#thumbs').galleriffic({
 					delay:                     2500,
-					numThumbs:                 15,
+					numThumbs:                 50,
 					preloadAhead:              10,
 					enableTopPager:            true,
 					enableBottomPager:         true,
