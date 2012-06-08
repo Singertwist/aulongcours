@@ -34,8 +34,10 @@ try
     // On affiche chaque entrée une à une
     while ($donnees = $reponse->fetch())
     {
-    ?>
-        <p><?php echo $donnees['titre']; ?><img src="<?php echo $donnees['images']; ?>"/><?php echo $donnees['contenu']; ?></p>
+    ?>	
+		<img src="timthumb.php?src=<?php echo $donnees['images']; ?>&h=200&w=640"/> 
+        <h3><?php echo $donnees['titre']; ?>:</h3>
+        <p><?php echo $donnees['contenu']; ?></p>
   
     <?php
     }

@@ -222,9 +222,16 @@ color: #1F1F1F;
 .colonne_gauche img
 {
 float: right;
-padding: 10px;
+padding-bottom: 10px;
 padding-bottom: 0;
 }
+
+.colonne_gauche_image_index img
+{
+padding-left: 10px;
+padding-bottom: 0;
+}
+
 .colonne_droite
 {
 float: right;
@@ -239,7 +246,7 @@ margin-left: 10px;
 
 .colonne_droite dl
 {
-margin-left: 10px;
+padding-left: 10px;
 }
 
 .colonne_droite a
