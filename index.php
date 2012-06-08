@@ -88,7 +88,7 @@ try
     {
     ?>
         <h5><?php echo $donnees['titre']; ?>:</h5>
-        <p><img src="<?php echo $donnees['images']; ?>"/>
+        <p><img src="timthumb.php?src=<?php echo $donnees['images']; ?>&h=200&w=200"/> 
         <?php 
 		$position_point = strpos(strip_tags($donnees['contenu']), ".", 1000);
 		$contenunews_raccourci = substr(strip_tags($donnees['contenu']), 0, $position_point+1);
