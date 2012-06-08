@@ -36,6 +36,7 @@ try
     {
     ?>	
 		<img src="timthumb.php?src=<?php echo $donnees['images']; ?>&h=200&w=640"/> 
+		<div class="ariane"><p><a href="/blog/index.php">Accueil</a> -> <a href="afficher.php?afficher_news=<?php echo $afficher; ?>"><?php echo $donnees['titre']; ?></a></p></div>
         <h3><?php echo $donnees['titre']; ?>:</h3>
         <p><?php echo $donnees['contenu']; ?></p>
   

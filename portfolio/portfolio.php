@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<title>Galleriffic | Integration with history plugin</title>
+		<title>Au long cours - Portfolio</title>
 		<link rel="stylesheet" href="css/basic.css" type="text/css" />
 		<link rel="stylesheet" href="css/galleriffic-3.css" type="text/css" />
 		<?php include('../favicon.php'); ?>
