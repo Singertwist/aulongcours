@@ -57,7 +57,7 @@
     // On se connecte à MySQL
     $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
     $bdd = new PDO('mysql:host=localhost;dbname=aulongcours', 'root', '', $pdo_options);
-    $nbbilletspages = 2;
+    $nbbilletspages = 4;
     // On récupère tout le contenu de la table jeux_video
     $req = $bdd->query('SELECT COUNT(id) AS nbbilellets FROM billets');
 	$donnees = $req->fetch();

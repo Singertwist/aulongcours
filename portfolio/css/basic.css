@@ -1,4 +1,5 @@
 @import url("style.css");
+@import url("/blog/menu.css");
 @import url("/blog/footer.css");
 @font-face 
 {
@@ -28,59 +29,7 @@ padding: 0 10px;
 margin: 0 auto;
 font-family: "Au long cours";
 }
-/*Début menu*/
-.menu
-{
-background-color: #000;
-height: 45px;
--moz-opacity:0.2;
-opacity: 0.2;
-filter:alpha(opacity=20);
-}
 
-.menu dl
-{
-height: 45px;
-margin: 0;
-padding: 0;
-display: block;
-float: left;
-}
-
-.menu dt
-{
-display: block;
-height: 45px;
-padding-right: 40px;
-padding-left: 40px;
-line-height: 45px;
-text-align: center;
-border-right: solid 1px #ffffff ; /*C98C51 =>Marron clair*/
-cursor: pointer;
-}
-
-.menu dt:hover
-{
-background-color: #464444;/*#4A4A4A;*/
-height: 45px;
-/*-moz-opacity:0.4;
-opacity: 0.4;
-filter:alpha(opacity=40);*/
-}
-.menu dt a
-{
-color: #ffffff;
-text-decoration: none;
-font-size: 13px;
-}
-
-.barre_menu
-{
-background-color: #3C3C3C;
-color: white;
-height: 5px;
-width: 980px;
-}
 
 /*Fin menu*/
 
@@ -143,8 +92,10 @@ color: #151412;
 .image_colonne
 {
 width: 980px;
-/*background: url('images/corps.png') center repeat-y;*/
-background-color: #fff;
+background: url('/blog/portfolio/images/corps.png') center repeat-y;
+position: relative;
+z-index: -1;
+/*background-color: #fff;*/
 }
 /*Fin une portfolio*/
 

@@ -4,7 +4,6 @@
 		<title>Au long cours - Portfolio</title>
 		<link rel="stylesheet" href="css/basic.css" type="text/css" />
 		<link rel="stylesheet" href="css/galleriffic-3.css" type="text/css" />
-		<?php include('../favicon.php'); ?>
 		<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
 		<script type="text/javascript" src="js/jquery.history.js"></script>
 		<script type="text/javascript" src="js/jquery.galleriffic.js"></script>

@@ -1,4 +1,5 @@
 @import url("style.css");
+@import url("menu.css");
 @import url("footer.css");
 @font-face 
 {
@@ -31,58 +32,7 @@ font-family: "Au long cours";
 
 /*Début menu*/
 
-.menu
-{
-background-color: #000;
-height: 45px;
--moz-opacity:0.2;
-opacity: 0.2;
-filter:alpha(opacity=20);
-}
 
-.menu dl
-{
-height: 45px;
-margin: 0;
-padding: 0;
-display: block;
-float: left;
-}
-
-.menu dt
-{
-display: block;
-height: 45px;
-padding-right: 40px;
-padding-left: 40px;
-line-height: 45px;
-text-align: center;
-border-right: solid 1px #ffffff ; /*C98C51 =>Marron clair*/
-cursor: pointer;
-}
-
-.menu dt:hover
-{
-background-color: #464444;/*#4A4A4A;*/
-height: 45px;
-/*-moz-opacity:0.4;
-opacity: 0.4;
-filter:alpha(opacity=40);*/
-}
-.menu dt a
-{
-color: #ffffff;
-text-decoration: none;
-font-size: 13px;
-}
-
-.barre_menu
-{
-background-color: #3C3C3C;
-color: white;
-height: 5px;
-width: 980px;
-}
 /*Fin menu*/
 
 
@@ -96,6 +46,8 @@ height: 300px;
 .slider
 {
 font-family : Tahoma, sans-serif;
+position: relative;
+z-index: -1;
 }
 
 /*logo*/
