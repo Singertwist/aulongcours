@@ -94,7 +94,7 @@ color: #151412;
 width: 980px;
 background: url('/blog/portfolio/images/corps.png') center repeat-y;
 position: relative;
-z-index: -1;
+z-index: 0;
 /*background-color: #fff;*/
 }
 /*Fin une portfolio*/

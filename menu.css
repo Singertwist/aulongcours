@@ -3,6 +3,7 @@
 background-image: url('/blog/images/fond_menu.png');
 height: 45px;
 position: relative;
+z-index: 1;
 -moz-opacity:0.9;
 opacity: 0.8;
 filter:alpha(opacity=90);

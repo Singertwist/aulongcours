@@ -141,24 +141,7 @@ catch(Exception $e)
 
 
 	</div>
-	<div class="colonne_droite">
-	<h3>Catégories:</h3>
-				<dl>
-				<dt><a href="">Moncton, qu'est ce donc?</a></dt>
-				</dl>
-				<dl>
-				<dt><a href="">Université de Moncton</a></dt>
-				</dl>
-				<dl>	
-				<dt><a href="">Préparatifs</a></dt>
-				</dl>
-				<dl>	
-				<dt><a href="">Sur place</a></dt>
-				</dl>	
-				<dl>
-				<dt><a href="">A l'aventure!</a></dt>
-				</dl>
-	</div>
+	<?php include('colonne_droite.php'); ?> 
 	
 	
 	

@@ -47,7 +47,7 @@ height: 300px;
 {
 font-family : Tahoma, sans-serif;
 position: relative;
-z-index: -1;
+z-index: 0;
 }
 
 /*logo*/

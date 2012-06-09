@@ -11,17 +11,17 @@
 						<li><a href="">Université de Moncton</a></li>
 						<li><a href="">Préparatifs</a></li>
 						<li><a href="">Sur place</a></li>
-						<li><a href="">A l'aventure!</a></li>
+						<li><a href="">Le voyage</a></li>
 					
 					</ul>
 					
 				</dd>
 			</dl>
 			<dl>	
-				<dt><a href="/blog/portfolio/portfolio.php">Portfolio</a></dt>
+				<dt><a href="">Portfolio</a></dt>
 				<dd>
 					<ul>
-						<li><a href="">Canada</a></li>
+						<li><a href="/blog/portfolio/portfolio.php">Canada</a></li>
 					</ul>
 				</dd>
 			</dl>

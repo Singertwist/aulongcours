@@ -12,7 +12,7 @@
 		<script type="text/javascript">
 			document.write('<style>.noscript { display: none; }</style>');
 		</script>
-		
+		<?php include('../favicon.php'); ?>
 	</head>
 	
 	<body>
