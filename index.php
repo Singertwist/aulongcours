@@ -93,7 +93,7 @@ try
 		$position_point = strpos(strip_tags($donnees['contenu']), ".", 1000);
 		$contenunews_raccourci = substr(strip_tags($donnees['contenu']), 0, $position_point+1);
 		echo stripslashes($contenunews_raccourci); ?><?php echo '<a href="afficher.php?afficher_news=' . $donnees['id'] . '">'; ?>														Lire la suite...</a></p>
-        
+        <div class="separation"></div>
          
     <?php
     }
@@ -111,11 +111,12 @@ catch(Exception $e)
 ?>
 
 	<!--Nombre de pages-->	
-	<div class="num_page"><?php
-	echo 'Page: ';
+	<div class="num_page">
+	<?php
+	/*echo 'Page: ';*/
 	for ($i = 1 ; $i <= $nbpage ; $i++)
 	{
-    echo '<a href="index.php?page=' . $i . '">' . $i . '</a> ';
+    echo 'Page: <a href="index.php?page=' . $i . '">' . $i . '</a> ';
 	}
 	?></div>
 

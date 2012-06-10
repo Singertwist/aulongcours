@@ -211,6 +211,21 @@ color: #000;
 {
 color: #1F1F1F;
 }
+
+/*.separation img
+{
+margin-right: 50px;
+padding: 0;
+}
+*/
+.separation
+{
+width: 540px;
+height: 1px;
+background-image: url('images/separation.png');
+margin: auto;
+}
+
 /*Fin corps page*/
 
 .center
@@ -240,6 +255,7 @@ color: #000;
 {
 color: #1F1F1F;
 }
+
 /*Fin numéro page*/
 
 
