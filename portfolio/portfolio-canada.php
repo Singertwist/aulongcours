@@ -20,7 +20,7 @@
 			<div id="container">
 				<?php include('../logo.php'); ?>
 				<?php include('../menu.php'); ?>
-				<div class="en_tete_une"><h4>Portfolio:</h4></div>
+				<div class="en_tete_une"><h4>Portfolio Canada:</h4></div>
 				<div class="image_colonne">
 				<!-- Start Advanced Gallery Html Containers -->
 				<div id="gallery" class="content">

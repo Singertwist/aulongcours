@@ -71,7 +71,7 @@ try
     $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
     $bdd = new PDO('mysql:host=localhost;dbname=aulongcours', 'root', '', $pdo_options);
     
-    // On récupère tout le contenu de la table jeux_video
+    
     
     if (isset($_GET['page']))
     {

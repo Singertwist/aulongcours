@@ -1,0 +1,417 @@
+body
+{
+background-image: url("images/darkwood.jpg");
+}
+
+/*Positionnement page (colonne) */
+
+.droite
+{
+float: right;
+width: 25%;
+}
+.gauche
+{
+float: left;
+width: 25%;
+}
+
+.centre
+{
+width: 50%;
+height: auto;
+}
+/*Fin positionnement page*/
+
+
+/*menu ligne*/
+
+
+ul#menu_horizontal li 
+{ 
+display : inline;
+padding-left : 5%; 
+}
+ul#menu_horizontal 
+{
+list-style-type : none; 
+background-color: #4E4E4E;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-top: -10px;
+text-align: center;
+}
+
+ul#menu_horizontal a
+{
+text-decoration: none;
+color: #ffffff;
+}
+
+ul#menu_horizontal a:hover
+{
+color: #77AD35; 
+}
+/*fin menu ligne*/
+
+
+.haut
+{
+padding: 10px;
+margin-top: 0px; 
+font-weight: bold; 
+padding-left: 20px; 
+line-height: 5px; 
+border-bottom: 1px solid rgb(207, 205, 165); 
+color: #ffffff;
+background-color: #77AD35; 
+font-size: 14px; 
+font-family: Microsoft Sans Serif,sans-serif;
+border-radius: 10px 10px 0px 0px;
+}
+
+.haut a
+{
+text-decoration: none;
+color: #ffffff;
+}
+
+.haut a:hover
+{
+color: #325A26;
+}
+
+#date_heure
+{
+text-align: right;
+}
+
+
+/*début calendrier*/
+
+thead
+{
+width:10%;
+height: auto;
+}
+
+tfoot
+{
+width: 10%;
+height: auto;
+}
+
+table
+{
+width:90%;
+height:90%;
+}
+	
+.cal_calendrier 
+{
+border:1px solid black;
+padding:1px;
+margin: auto;
+
+}
+.cal_calendrier th
+{
+border:1px solid black;
+background-color:#ffffff;
+width:10%;
+height: auto;
+}
+.cal_calendrier td
+{
+border:1px solid black;
+background-color:#ffffff;
+text-align:center;
+width:10%;
+height: auto;
+}
+.cal_aujourdhui
+{
+color:#ff0000;
+width:10%;
+height: auto;
+}
+.cal_jours_av_ap
+{
+color:#5a779e;
+width:10%;
+height: auto;
+}
+
+.en_tete_calendrier
+{
+background-color: #4E4E4E;
+height: 0%;
+padding: 0%;
+text-align: center;
+padding: 1%;
+border-radius: 10px 10px 0px 0px;
+margin-bottom: -2%;
+} 
+
+.en_tete_calendrier h3
+{
+color: #ffffff;
+margin-top: 0%;
+}
+.calendrier
+{
+height: auto;
+background-color: #77AD35;
+padding: 1%;
+border-radius: 0px 0px 10px 10px;
+}
+ 
+/*fin calendrier*/ 
+
+
+/*formulaire boite à idées*/
+
+textarea
+{
+width: 100%;
+height: 100%;
+}
+
+.en_tete_boite_idees
+{
+background-color: #4E4E4E;
+height: 0%;
+text-align: center;
+padding: 1%;
+border-radius: 10px 10px 0px 0px;
+margin-bottom: -2%;
+}
+
+.en_tete_boite_idees h3
+{
+color: #ffffff;
+margin-top: 0%;
+}
+
+.boite_idees
+{
+color: #ffffff;
+height: auto;
+background-color: #77AD35;
+padding: 1%;
+border-radius: 0px 0px 10px 10px;
+}
+
+.texte_idees a
+{
+text-decoration: none;
+color: #325A26; 
+}
+
+.texte_idees:nth-child(even)
+{
+background-color: #80B739;
+padding: 1%; 
+}
+
+.texte_idees:nth-child(odd)
+{
+padding: 1%;
+padding-top: 0%;
+}
+
+.derniere_idees
+{
+background-color: #4E4E4E;
+width: 100%;
+padding-left: 2%;
+margin-left: -1%;
+}
+
+.derniere_idees h3
+{
+text-align: center;
+color: #ffffff;
+}
+
+
+.date_idees
+{
+font-size: 12px;
+}
+/* fin formulaire boîte à idées*/
+
+/*début centre*/
+.en_tête
+{
+background-color: #4E4E4E;
+width: 90%;
+padding: 1%;
+margin-left: 53.5%;
+border-radius: 10px 10px 0px 0px;
+padding-bottom: 10%;
+}
+
+.en_tête h3
+{
+color: #ffffff;
+text-align: center;
+margin-top: 0%;
+padding-bottom: 1%;
+}
+
+.dernieres_news
+{
+color: #ffffff;
+width: 88%;
+height: auto;
+text-align: justify;
+margin-left: 53.5%;
+background-color: #77AD35;
+padding: 2%;
+margin-top: -12%;
+border-radius: 0px 0px 10px 10px;
+}
+
+.couleur:nth-child(odd)
+{
+padding-bottom: 1%;
+}
+
+.couleur:nth-child(even)
+{
+background-color: #80B739; 
+margin-left: -2.2%;
+margin-right: -2.3%;
+padding: 1%;
+}
+.couleur a
+{
+text-decoration: none;
+color: #325A26; 
+}
+
+.couleur h3
+{
+color: #386B0C;
+}
+/*fin centre*/
+
+/* ************************************************************************************************************* */
+
+/*Design page Panel News*/
+
+/*colonne de gauche*/
+
+.inserer
+{
+width: 49.5%;
+float: left;
+background-color: #80B739;
+border-radius: 15px 15px 10px 10px;
+margin-right: 0.5%;
+}
+
+form
+{
+width: 90%;
+margin: auto
+}
+
+.en_tete_news
+{
+background-color: #4E4E4E;
+height: 0%;
+text-align: center;
+padding: 1%;
+border-radius: 10px 10px 0px 0px;
+margin-bottom: 0%;
+}
+
+.en_tete_news h3
+{
+color: #ffffff;
+margin-top: -0.8%;
+margin-bottom: -0.8%;
+}
+
+
+/*fin colonne de gauche*/
+
+/* début colonne de droite*/
+
+.inserer_droite
+{
+margin-left: 0.5%;
+float: right;
+width: 49.5%;
+float: left;
+background-color: #80B739;
+border-radius: 15px 15px 10px 10px;
+}
+
+table
+{
+color: #ffffff;
+width: 100%;
+height: auto;
+text-align: center;
+border-collapse:collapse;
+border: 1px solid #4E4E4E;
+border-radius: 0px 0px 10px 10px;
+}
+
+thead
+{
+color: #325A26;
+background-color: #72A836;
+}
+
+table a
+{
+color: #ffffff;
+text-decoration: none;
+}
+
+th, td
+{
+border:1px solid #4E4E4E;
+width: 20%;
+padding: 2%;
+}
+
+.pied
+{
+margin-top: 42%;
+}
+
+
+/* Début page modifier news*/
+
+.en_tete_modifier
+{
+background-color: #4E4E4E;
+height: 0%;
+text-align: center;
+padding: 1%;
+border-radius: 10px 10px 0px 0px;
+margin-bottom: 0%;
+}
+
+.en_tete_modifier h3
+{
+color: #ffffff;
+margin-top: -0.8%;
+margin-bottom: -0.8%;
+}
+
+.modifier
+{
+color: #ffffff;
+width: 100%;
+float: left;
+background-color: #80B739;
+border-radius: 0px 0px 10px 10px;
+margin-bottom: 1%;
+}
+

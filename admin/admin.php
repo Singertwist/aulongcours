@@ -2,9 +2,9 @@
 <html>
     <head>
 		<!--<link rel="stylesheet" media="screen" type="text/css" href="admin.css" />-->
-		<link rel="stylesheet" media="screen" type="text/css" href="admin.css" />
+		<link rel="stylesheet" media="screen" type="text/css" href="index.css" />
 		<meta charset="utf-8" />
-        <title>Panel administration d'Au long cours</title>
+        <title>Panel administration de la Mine d'Infos</title>
 		<script type="text/javascript" src="js/heure_date.js"></script>
 		<script type="text/javascript" src="js/calendrier.js"></script>
     <body>
@@ -20,22 +20,8 @@
 		<div class="liste_articles">
 		<div class="colonne_gauche">
 		
-		<h4><u>Les dernières news publiées:</u></h4>
+		<div class="en_tête"><h4><u>Les dernières news publiées:</u></h4></div>
 		<div class="dernieres_news">	
-		
-		<?php
-	
-    // On se connecte à MySQL
-    $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-    $bdd = new PDO('mysql:host=localhost;dbname=aulongcours', 'root', '', $pdo_options);
-    $nbbilletspages = 3;
-    // On récupère tout le contenu de la table jeux_video
-    $req = $bdd->query('SELECT COUNT(id) AS nbbilellets FROM billets');
-	$donnees = $req->fetch();
-	$req->closeCursor();
-	$nbpage = ceil($donnees['nbbilellets'] / $nbbilletspages);
-	?>
-		
 		<?php
 try
 {
@@ -43,24 +29,15 @@ try
     $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
     $bdd = new PDO('mysql:host=localhost;dbname=aulongcours', 'root', '', $pdo_options);
     
-    
-    
-	if (isset($_GET['page']))
-    {
-		$page = $_GET['page'];
-	}
-	else
-	{
-		$page = 1;
-	}
-	$premierBilletAafficher = ($page - 1) * $nbbilletspages;
-    $reponse = $bdd->query('SELECT * FROM billets ORDER BY date_creation DESC LIMIT ' . $premierBilletAafficher . ', ' . $nbbilletspages);
-    // On affiche chaque entrée une à une
+    // On récupère tout le contenu de la table jeux_video
+    $reponse = $bdd->query('SELECT * FROM billets ORDER BY date_creation DESC LIMIT 0, 5');
+        // On affiche chaque entrée une à une
+        
     while ($donnees = $reponse->fetch())
     {
     ?>
-        <div class="liste_news">
-        <h5><u><?php echo $donnees['titre']; ?></u></h5> 
+        
+        <div class="couleur"><h3><?php echo $donnees['titre']; ?></h3> 
         
         <?php 
 		$position_point = strpos(strip_tags($donnees['contenu']), ".", 50);
@@ -70,9 +47,8 @@ try
 		
        <!--ici fonction-->
         
-        <br/><span class="date_idees"><em><?php echo $donnees['date_creation'];?></em></span><br/></br>
-        <div class="separation"></div>
-       </div> 
+        <br/><span class="date_idees"><em><?php echo $donnees['date_creation'];?></em></span>
+        </div>
     <?php
     }
     
@@ -88,26 +64,23 @@ try
 
 	?>
 	
-	<div class="separation"></div>
-	<!--Nombre de pages-->
-	
-		<div class="num_page">
-	<?php
-	echo 'Page: ';
-	for ($i = 1 ; $i <= $nbpage ; $i++)
-	{
-    echo '<a href="admin.php?page=' . $i . '">' . $i . '</a> ';
-	}
-	?></div>
-	
-	
-	
-	
-	
-	
-	<!--Début boite à idée-->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   	
-	<div class="en_tete_boite_idees"><h4 id="boite-idees">La boîte à liens et idées:</h4></div>
+	
+	
+	<div class="en_tete_boite_idees"><h3>La boîte à liens et idées:</h3></div>
 	<div class="boite_idees">
 	<p>
 	<form method="post" name="boite_idees" action="boite_idees/boite_idees.php">
@@ -149,17 +122,15 @@ try
 
 	?>
 	</div>
-	
 	</div>
-	 
+  
   
   	</div>
-  	<?php include('colonne_droite_admin.php'); ?>
 	</div>
 	</div>
   
   
-  <?php include('footer.php'); ?>
+  <?php include('../footer.php'); ?>
     
     </body>
 </html>
