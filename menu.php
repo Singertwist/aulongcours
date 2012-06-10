@@ -29,7 +29,7 @@
 				<dt><a href="">A propos</a></dt>
 			</dl>	
 			<dl>
-				<dt><a href="">Contact</a></dt>
+				<dt><a href="/blog/contact/contact.php">Contact</a></dt>
 			</dl>
 		</div>
 		</div>

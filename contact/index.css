@@ -1,15 +1,15 @@
-@import url("style.css");
-@import url("menu.css");
-@import url("footer.css");
+@import url("/blog/style.css");
+@import url("/blog/menu.css");
+@import url("/blog/footer.css");
 @font-face 
 {
 font-family: "Au long cours";
-src: url('fonte/JandaElegantHandwriting.ttf');
+src: url('/blog/fonte/JandaElegantHandwriting.ttf');
 }
 
 html
 {
-background-image: url('images/bg.png');
+background-image: url('/blog/images/bg.png');
 }
 
 body html
@@ -38,7 +38,7 @@ font-family: "Au long cours";
 
 .clair
 {
-background-image: url:("images/slider-bg.png");
+background-image: url:("/blog/images/slider-bg.png");
 width: 980px;
 height: 300px;
 }
@@ -90,7 +90,7 @@ color: #C65145;
 {
 margin: 0;
 padding: 0;
-background-image: url("images/slider-bg.png");
+background-image: url("/blog/images/slider-bg.png");
 width: 980px;
 }
 
@@ -135,7 +135,7 @@ background-color: #EEEEEE;
 .image_colonne
 {
 width: 980px;
-background: url(images/corps.png) center repeat-y;
+background: url('/blog/images/corps.png') center repeat-y;
 }
 .colonne_gauche
 {
@@ -290,4 +290,16 @@ td > button{
 	bottom:9px;
 	visibility:hidden;
 }
+
+.image_contact
+{
+margin-bottom: 270px;
+}
+
+#main-container
+{
+margin-left: 100px;
+
+}
+
 /*Fin formulaire de contact*/
