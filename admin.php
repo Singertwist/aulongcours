@@ -19,8 +19,9 @@
 		<div class="center">
 		<div class="liste_articles">
 		<div class="colonne_gauche">
+		<img src="images-admin/image-accueil.png" alt="image admin">
 		
-		<h4><u>Les dernières news publiées:</u></h4>
+		<h4><u><br/>Les dernières news publiées:</u></h4>
 		<div class="dernieres_news">	
 		
 		<?php
