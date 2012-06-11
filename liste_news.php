@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-		<script type="text/javascript" src="js/heure_date.js"></script>
 		<script type="text/javascript" src="tinymce/jscripts/tiny_mce/tiny_mce.js" ></script >
 		<script type="text/javascript">
 		tinyMCE.init({
@@ -22,43 +21,47 @@
         theme_advanced_resizing : true
 		});
 		</script>
-		<link rel="stylesheet" media="screen" type="text/css" href="liste_news.css" />
+		<link rel="stylesheet" media="screen" type="text/css" href="admin.css" />
         <meta charset="utf-8" />
         <title>Panel admin - Liste News</title>
 
     </head>
 	
     <body>
-	<!--Début menu horizontale-->
-	
-		<div class="haut"><h3><a href="admin.php">Bienvenue sur le panel d'administration de la Mine d'Infos!</a><div id="date_heure"></div></h3></div>
-	<ul id="menu_horizontal">
-		<li><a href="admin.php">Accueil</a></li>
-		<li><a href="liste_news.php">Panel News</a></li>
-	</ul>
-	
-	<!--fin menu-->
+		
+		<?php include('logo.php'); ?>
+		<?php include('menu.php'); ?>
+		<div class="en_tete_une"><h4>Rédiger une News!</h4></div>
+		<div class="barre_menu"></div>
+		
 	
 	
-	<!--colonne de gauche-->
+		<div class="image_colonne">
+		<div class="center">
+		<div class="liste_articles">
+		<div class="colonne_gauche">
+		
+		<h4><u><br/>Rédiger une news:</u></h4>
+		<div class="dernieres_news">
+		
 	
-	<div class="inserer">
-		<div class="en_tete_news"><h3>Rédiger une News:</h3></div>
-	<h3>Penser à bien remplir tous les champs (obligatoire!)</h3>
-	<p>
-	<form method="post" action="ajouter.php" name="rediger_news" enctype="multipart/form-data" style=" color: #ffffff;">
-	Titre: <br/><input type="text" name="titre" size="50%"/><br/><br/>
-	Image (JPEG, JPG, PNG, GIF): <br><input type="file" name="image" /><br/><br/>
-	Contenu: <br/><textarea name="contenu" cols="" rows="" style="width: 100%; height: 100%;"></textarea><br/>
 	
-	<input type="submit" value="Envoyer"/>
-	</form><br/>
-	</p>
-	</div>	
-	<!-- Fin colonne de gauche-->
+			<div class="rediger_news">
+			<form method="post" action="ajouter.php" name="rediger_news" enctype="multipart/form-data" style=" color: #ffffff;">
+			<p>Titre: <br/><input type="text" name="titre" size="50%"/><br/><br/>
+			Image (JPEG, JPG, PNG, GIF): <br><input type="file" name="image" /><br/><br/>
+			Contenu: <br/><textarea name="contenu" cols="" rows=""></textarea><br/>
 	
-	<div class="inserer_droite"> 
-		<div class="en_tete_news"><h3>Liste des News:</h3></div>
+			<input type="submit" value="Envoyer"/>
+			</p>
+			</form>
+			<p>Prenez le temps de bien remplir tous les champs, sinon il vous sera impossible de poster une news.</p>
+			</div>
+			
+
+	
+	
+		<div class="en_tete_news"><h4 id="modifier">Liste des News:</h4></div>
     <?php
 try
 {
@@ -114,9 +117,22 @@ catch(Exception $e)
 
 ?>
 	
-</div>
+
+
+
+	</div>
 	
-    <div class="pied"></div>
-    
+	</div>
+	 
+  
+  	</div>
+  	<?php include('colonne_droite_admin.php'); ?>
+	</div>
+	</div>
+  
+  
+	<?php include('footer.php'); ?>
+	
+        
     </body>
 </html>

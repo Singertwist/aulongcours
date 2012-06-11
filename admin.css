@@ -343,3 +343,54 @@ margin-left: 70px;
 }
 
 /*Fin page admin liste news*/
+
+/*Début rédiger une news*/
+.rediger_news p
+{
+width: 100%;
+color: #000;
+}
+
+.rediger_news textarea
+{
+width: 95%;
+}
+
+table
+{
+color: #000;
+width: 640px;
+height: auto;
+text-align: center;
+border-collapse:collapse;
+border: 1px solid #4E4E4E;
+border-radius: 0px 0px 10px 10px;
+margin-bottom: 10px;
+}
+
+thead
+{
+color: #000;
+background-color: #3c3c3c;
+}
+
+table a
+{
+color: #ffffff;
+text-decoration: none;
+}
+
+th, td
+{
+width: 160px;
+border:1px solid #4E4E4E;
+}
+/*Fin rédiger une news*/
+
+
+/*Début modifier une news */
+
+
+
+
+/*Fin modifier une news*/

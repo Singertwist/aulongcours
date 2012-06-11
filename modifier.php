@@ -3,7 +3,7 @@
     <head>
 		<meta charset="utf-8" />
         <title>Panel admin - Modifier News</title>
-        <link rel="stylesheet" media="screen" type="text/css" href="liste_news.css" />
+        <link rel="stylesheet" media="screen" type="text/css" href="admin.css" />
 		<script type="text/javascript" src="tinymce/jscripts/tiny_mce/tiny_mce.js" ></script >
 		<script type="text/javascript">
 		tinyMCE.init({
@@ -28,17 +28,21 @@
     </head>
 
     <body>
-		<!--Début menu horizontale-->
-	
-		<div class="haut"><h3><a href="admin.php">Bienvenue sur le panel d'administration de la Mine d'Infos!</a><div id="date_heure"></div></h3></div>
-	<ul id="menu_horizontal">
-		<li><a href="admin.php">Accueil</a></li>
-		<li><a href="liste_news.php">Panel News</a></li>
-	</ul>
-	
-	<!--fin menu-->
+		<?php include('logo.php'); ?>
+		<?php include('menu.php'); ?>
+		<div class="en_tete_une"><h4>Modifier une News!</h4></div>
+		<div class="barre_menu"></div>
 		
-	<!-- début centre -->	
+	
+	
+		<div class="image_colonne">
+		<div class="center">
+		<div class="liste_articles">
+		<div class="colonne_gauche">
+		
+		<h4><u><br/>Modifier une news:</u></h4>
+		<div class="dernieres_news">			
+	
  	<?php 	$modifier = $_GET['modifier_news']; ?>
     <?php
 try
@@ -70,18 +74,30 @@ catch(Exception $e)
 
 
 ?>
-	<div class="en_tete_modifier"><h3>Modifier une news:</h3></div>
 	
-	<div class="modifier">
-	<p>
+	<div class="rediger_news">
+	
 	<form method="post" action="<?php echo'suite_modifier.php?suite_modifier_news=' .$modifier.'';?>" name="rediger_news">
-	Titre: <br/><input type="text" size="100%" name="titre" value="<?php echo $titre; ?>"/><br/><br/>
-	Contenu: <br/><textarea name="contenu" cols="" rows="" style="width: 100%; height: 100%;"><?php echo $contenu; ?> </textarea><br/>
+	<p>
+	Titre: <br/><input type="text" size="50%" name="titre" value="<?php echo $titre; ?>"/><br/><br/>
+	Contenu: <br/><textarea name="contenu" cols="" rows=""><?php echo $contenu; ?> </textarea><br/>
 	<input type="submit" value="Envoyer"/>
-	</form><br/>
 	</p>
+	</form>
+	
 	</div>
-	<!-- fin centre-->
+	
+	</div>
+	 
+  
+  	</div>
+  	<?php include('colonne_droite_admin.php'); ?>
+	</div>
+	</div>
+  
+  
+	<?php include('footer.php'); ?>
+	
 
     
     </body>
