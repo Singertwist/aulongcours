@@ -10,8 +10,7 @@
     <?php 
 			$_POST['titre'] AND 
 			$_POST['album'] AND
-			$_POST['contenu'] AND
-    		$name = $_FILES['image']['name'] AND    //Le nom original du fichier, comme sur le disque du visiteur (exemple : mon_icone.png).
+			$name = $_FILES['image']['name'] AND    //Le nom original du fichier, comme sur le disque du visiteur (exemple : mon_icone.png).
 			$type = $_FILES['image']['type'] AND    //Le type du fichier. Par exemple, cela peut être « image/png ».
 			$size = $_FILES['image']['size'] AND    //La taille du fichier en octets.
 			$tmp = $_FILES['image']['tmp_name'] AND//L'adresse vers le fichier uploadé dans le répertoire temporaire.
@@ -21,7 +20,7 @@
 	
 	<?php
 	
-			if (isset($_POST['titre']) AND (isset($_POST['contenu'])) AND (isset($_FILES['image'])) AND $_FILES['image']['error']== 0)
+			if (isset($_POST['titre']) AND (isset($_FILES['image'])) AND $_FILES['image']['error']== 0)
 			
 			{	
 				$ext = strtolower(pathinfo($name, PATHINFO_EXTENSION));
@@ -35,11 +34,10 @@
 				{
 					$pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
 					$bdd = new PDO('mysql:host=localhost;dbname=aulongcours', 'root', '', $pdo_options);
-    				$req = $bdd->prepare('INSERT INTO portfolio(titre, album, contenu, date_creation, images) VALUES(:titre, :album, :contenu, NOW(), :images)');
+    				$req = $bdd->prepare('INSERT INTO portfolio(titre, album, date_creation, images) VALUES(:titre, :album, NOW(), :images)');
 					$req->execute(array(
 											'titre'=> $_POST['titre'],
 											'album'=> $_POST['album'],
-											'contenu'=> $_POST['contenu'],
 											'images'=> $nomimage2,
 										));
     

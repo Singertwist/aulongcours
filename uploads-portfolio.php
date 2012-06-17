@@ -35,7 +35,7 @@
 						
 			Titre: <br/><input type="text" name="titre" size="50%"/><br/><br/>
 			Image (JPEG, JPG, PNG, GIF): <br><input type="file" name="image" /><br/><br/>
-			Description: <br/><textarea name="contenu" cols="" rows=""></textarea><br/>
+			
 	
 			<input type="submit" value="Envoyer"/>
 			</p>
@@ -46,7 +46,7 @@
 
 	
 	
-		<div class="en_tete_news"><h4 id="modifier">Liste des albums:</h4></div>
+		<div class="en_tete_news"><h4 id="modifier">Liste des dernières photos publiées:</h4></div>
     <?php
 try
 {
