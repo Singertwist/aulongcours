@@ -10,10 +10,10 @@
 				<dt><a href="/blog/ajouter.php">Créer une news</a></dt>
 				</dl>
 				<dl>	
-				<dt><a href="/blog/ajouter.php#modifier">Modifier une news</a></dt>
+				<dt><a href="/blog/ajouter.php#modifier">Modifier et supprimer une news</a></dt>
 				</dl>
 				<dl>	
-				<dt><a href="">Uploader des photos Portfolio</a></dt>
+				<dt><a href="/blog/uploads-portfolio.php">Uploader des photos Portfolio</a></dt>
 				</dl>	
 				
 	</div>

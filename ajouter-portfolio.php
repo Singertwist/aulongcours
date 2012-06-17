@@ -53,7 +53,7 @@
 			else
 			{
 				echo "Vérifier votre titre, le contenu, ainsi que votre image";
-				header('Location: liste_news.php');
+				header('Location: ajouter-portfolio.php');
 			}
 	?>
 

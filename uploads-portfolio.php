@@ -55,7 +55,7 @@ try
     $bdd = new PDO('mysql:host=localhost;dbname=aulongcours', 'root', '', $pdo_options);
     
     // On récupère tout le contenu de la table jeux_video
-    $reponse = $bdd->query('SELECT id, titre, contenu, date_creation FROM billets ORDER BY date_creation DESC');
+    $reponse = $bdd->query('SELECT * FROM portfolio ORDER BY date_creation DESC');
     ?>
     
         <table>
@@ -65,6 +65,7 @@ try
 			<td>Modifier</td>
 			<td>Supprimer</td>
 			<td>Titre</td>
+			<td>Catégorie</td>
 			<td>Date création</td>
 			
 			</tr>
@@ -80,6 +81,7 @@ try
 			<td><?php echo '<a href="modifier.php?modifier_news=' . $donnees['id'] . '">'; ?>Modifier</a></td>
 			<td><?php echo '<a href="supprimer.php?supprimer_news=' . $donnees['id'] . '">'; ?>Supprimer</a></td>
 			<td><?php echo $donnees['titre']; ?></td>
+			<td><?php echo $donnees['album']; ?></td>
 			<td><?php echo $donnees['date_creation']; ?></td>
 			
 			</tr>
