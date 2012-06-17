@@ -78,7 +78,7 @@ try
     ?>	 
 		<table>
 			<tr>
-			<td><?php echo '<a href="modifier.php?modifier_news=' . $donnees['id'] . '">'; ?>Modifier</a></td>
+			<td><?php echo '<a href="modifier-image-portfolio.php?modifier-image-portfolio=' . $donnees['id'] . '">'; ?>Modifier</a></td>
 			<td><?php echo '<a href="supprimer.php?supprimer_news=' . $donnees['id'] . '">'; ?>Supprimer</a></td>
 			<td><?php echo $donnees['titre']; ?></td>
 			<td><?php echo $donnees['album']; ?></td>
