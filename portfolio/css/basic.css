@@ -95,6 +95,7 @@ width: 980px;
 background: url('/blog/portfolio/images/corps.png') center repeat-y;
 position: relative;
 z-index: 0;
+padding-bottom: 100px;
 /*background-color: #fff;*/
 }
 /*Fin une portfolio*/

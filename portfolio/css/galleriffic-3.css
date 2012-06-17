@@ -65,7 +65,8 @@ div.slideshow img {
 	border: 1px solid #ccc;
 }
 div.download {
-	float: right;
+	margin-left: 75px;
+	/*float: right;*/
 }
 div.caption-container {
 	position: relative;
@@ -80,11 +81,12 @@ span.image-caption {
 	left: 0;
 }
 div.caption {
+	margin-left: 100px;
 	padding: 12px;
 }
 div.image-title {
 	font-weight: bold;
-	font-size: 1.4em;
+	font-size: 18px;
 }
 div.image-desc {
 	line-height: 1.3em;

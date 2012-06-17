@@ -55,14 +55,14 @@
 						
 						<li>
 							<a class="thumb" name="leaf" href="/blog/timthumb.php?src=<?php echo $donnees['images']; ?>&h=500&w=500" title="Title #0">
-								<img src="/blog/timthumb.php?src=<?php echo $donnees['images']; ?>&h=75&w=75" alt="Title #0" />
+								<img src="/blog/timthumb.php?src=<?php echo $donnees['images']; ?>&h=75&w=75" alt="Titre" />
 							</a>
 							<div class="caption">
+								
+								<div class="image-title"><?php echo $donnees['titre']; ?></div>
 								<div class="download">
 									<a href="/blog/<?php echo $donnees['images']; ?>">Voir l'original sans recadrage</a>
 								</div>
-								<div class="image-title"><?php echo $donnees['titre']; ?></div>
-								<?php echo $donnees['contenu']; ?>
 							</div>
 						</li>
 
